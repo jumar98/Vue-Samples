@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ingresa dos numeros y elige la operacion</h1>
+        <form action="">
+            <input type="number" v-model.number="a">
+            <select v-model="operator" class="form-control">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="number" v-model.number="b">
+            <button type="submit" @click.prevent="calcular"> 
+                Calcular
+            </button>
+        </form>
+        <h2>Resultado: {{a}} {{operator}} {{b}} = {{c}}</h2>
+           
+        <pre>{{$data}}</pre>
+
+    </div>
+</body>
+<script src="vue.js"></script>
+<script src="calculadora.js"></script>
+</html>
