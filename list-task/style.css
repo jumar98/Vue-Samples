@@ -1,0 +1,20 @@
+.caja{
+	display: inline-block;
+  	width: 300px;
+	margin: 1em;
+}
+
+.algo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+li{
+	list-style: none;
+}
+
+.ancho{
+	width: 400px;
+}
+
