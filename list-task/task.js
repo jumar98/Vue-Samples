@@ -12,9 +12,11 @@ new Vue({
 	},
 	methods:{
 		addTask(){
+		if(this.newTask!=""){
 		var a = {description:this.newTask,completed:false};
 		this.tasks.push(a);
 		this.newTask = "";
+		}
 		},
 		endTask(index){
 			this.tasks[index].completed = true;
