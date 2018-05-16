@@ -20,15 +20,17 @@ for(let i = 0; i < amount_phone; i++){
 
 checkMoney(account_bank,tax(cost_purchase,tax_price))
 
-
+//Calcular impuesto
 function tax(purchase, tax){
     return purchase = purchase + (purchase*tax)
 }
 
+//Formatear el precio
 function formated(amount_total){
     return `$${amount_total}`
 }
 
+//Chequear dinero disponible para la compra
 function checkMoney(account, amount_total){
     if(amount_total > account){
         let dif = amount_total-account  
